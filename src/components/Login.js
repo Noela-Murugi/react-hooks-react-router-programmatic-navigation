@@ -35,7 +35,7 @@ function Login({ onLogin }) {
       .then((user) => {
         onLogin(user);
         // after logging the user in, redirect to the home page!
-        history.push("/home");
+        window.history.push("/home");
       });
   }
 
